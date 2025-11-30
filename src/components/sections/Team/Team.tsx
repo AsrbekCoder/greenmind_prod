@@ -3,6 +3,7 @@ import { Container } from "../../common/Container/Container";
 import { Card } from "../../common/Card/Card";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import styles from "./Team.module.css";
+import { asrbek, doni, marjon, ulug } from "../../../assets/images";
 
 export const Team = () => {
   const { t } = useTranslation();
@@ -10,26 +11,26 @@ export const Team = () => {
   const teamMembers = [
     {
       id: "member1",
-      avatar: "👨‍💻",
+      avatar: asrbek,
       linkedin: "www.linkedin.com/in/asrbek-suvanov-a8a128217",
       github: "https://github.com/AsrbekCoder",
     },
     {
       id: "member4",
-      avatar: "👩",
+      avatar: marjon,
 
       linkedin: "https://linkedin.com",
       github: "https://github.com",
     },
     {
       id: "member2",
-      avatar: "👨‍🔬",
+      avatar: ulug,
       linkedin: "https://www.linkedin.com/in/ulug-bek-boboqulov-3b7a0b220/",
       github: "https://github.com",
     },
     {
       id: "member3",
-      avatar: "👨‍🏭",
+      avatar: doni,
       linkedin: "https://www.linkedin.com/in/doniyor-toychiyev/",
       github: "https://github.com/incognito3263",
     },
@@ -47,7 +48,14 @@ export const Team = () => {
         <div className={styles.grid}>
           {teamMembers.map((member) => (
             <Card key={member.id} className={styles.memberCard}>
-              <div className={styles.avatar}>{member.avatar}</div>
+              <img
+                src={member.avatar}
+                style={{
+                  objectFit: "cover",
+                }}
+                alt={t(`team.${member.id}.name`)}
+                className={styles.avatar}
+              />
               <h3 className={styles.name}>{t(`team.${member.id}.name`)}</h3>
               <p className={styles.role}>{t(`team.${member.id}.role`)}</p>
 
