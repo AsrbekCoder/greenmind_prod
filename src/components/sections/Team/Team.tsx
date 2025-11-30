@@ -16,7 +16,8 @@ export const Team = () => {
     },
     {
       id: "member4",
-      avatar: "👨‍🏭",
+      avatar: "👩",
+
       linkedin: "https://linkedin.com",
       github: "https://github.com",
     },
@@ -28,7 +29,7 @@ export const Team = () => {
     },
     {
       id: "member3",
-      avatar: "👩‍💼",
+      avatar: "👨‍🏭",
       linkedin: "https://www.linkedin.com/in/doniyor-toychiyev/",
       github: "https://github.com/incognito3263",
     },
