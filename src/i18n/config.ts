@@ -15,6 +15,7 @@ i18n
       uz: { translation: uz },
       ru: { translation: ru },
     },
+    lng: 'en',
     fallbackLng: 'en',
     supportedLngs: ['en', 'uz', 'ru'],
     detection: {

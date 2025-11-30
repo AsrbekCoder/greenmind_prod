@@ -12,8 +12,7 @@ interface Message {
   timestamp: Date;
 }
 
-const API_URL = "http://localhost:3002/api";
-
+const API_URL = "https://api.greenmind.edu-zon.uz/api";
 export const ChatBot = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
