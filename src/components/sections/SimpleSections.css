@@ -1,0 +1,315 @@
+/* Common Section Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary-green-pale);
+  color: var(--primary-green-dark);
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Card Icons */
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon.green {
+  color: var(--primary-green);
+}
+
+.card-icon.blue {
+  color: var(--secondary-blue);
+}
+
+.card-icon.purple {
+  color: var(--accent-purple);
+}
+
+/* WhyUs Section */
+.why-us-section {
+  background: var(--bg-white);
+}
+
+.reason-card {
+  text-align: center;
+  padding: 2rem !important;
+}
+
+.reason-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.reason-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+  background: var(--bg-gray-50);
+}
+
+.current-stage {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-green);
+  color: var(--text-white);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+}
+
+.roadmap-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.roadmap-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-green-light);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 60px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-green);
+  color: var(--text-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+.timeline-card {
+  padding: 1.5rem !important;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.phase-header h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.timeline-badge {
+  padding: 0.4rem 0.8rem;
+  background: var(--primary-green-pale);
+  color: var(--primary-green-dark);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.timeline-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-card li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timeline-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Approach Section */
+.approach-section {
+  background: var(--bg-white);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  padding: 2rem !important;
+  text-align: center;
+  border: 2px solid var(--bg-gray-200);
+  transition: all var(--transition-normal);
+}
+
+.step-card:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-green);
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.step-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Business Model Section */
+.business-section {
+  background: var(--gradient-green-light);
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.business-card {
+  padding: 2rem !important;
+}
+
+.business-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.business-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.business-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.business-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.business-card li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.business-card li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .grid-2,
+  .steps-grid,
+  .business-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .roadmap-timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-marker {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+}

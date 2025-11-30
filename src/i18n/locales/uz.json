@@ -1,0 +1,236 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "problem": "Muammo va yechim",
+    "team": "Jamoa",
+    "whyUs": "Nega biz",
+    "roadmap": "Yo'l xaritasi",
+    "approach": "Yondashuv",
+    "businessModel": "Biznes model",
+    "demo": "Demo so'rash"
+  },
+  "hero": {
+    "title": "GreenMind AI",
+    "subtitle": "Kam uglerodli kelajak uchun aqlli zavod yordamchisi",
+    "description": "Biz O'zbekiston va Markaziy Osiyo zavodlariga AI yordamida energiya isrofini kamaytirish, CO₂ chiqindilarini qisqartirish va avariyalarning oldini olishda yordam beramiz.",
+    "tagline": "Kamroq chiqindi, ko'proq samaradorlik — AI yordamida.",
+    "ctaProblem": "Muammo va yechimni ko'rish",
+    "ctaRoadmap": "Yo'l xaritasini ko'rish"
+  },
+  "problem": {
+    "title": "Muammo",
+    "subtitle": "Samarasiz, yuqori emissiyali, ko'rinmaydigan zavodlar",
+    "domain": "Atrof-muhit, Sanoat, Mahsuldorlik (Yashil ishlab chiqarish va Sanoat 4.0)",
+    "intro": "Bugungi kunda O'zbekiston va keng Markaziy Osiyo mintaqasidagi ko'plab zavodlar uchta bir-biriga bog'liq muammo bilan duch kelmoqda:",
+    "problem1": {
+      "title": "Yuqori va ko'rinmas CO₂ emissiyalari",
+      "description": "Ko'pgina zavodlar elektr energiyasi, tabiiy gaz va dizeldan foydalanadi, lekin o'zlarining haqiqiy uglerod izini kuzatmaydi. Bu kelajakdagi ekologik qonunlarga rioya qilishni va barqaror rivojlanish hisobotini talab qiladigan xalqaro hamkorlar bilan ishlashni qiyinlashtiradi."
+    },
+    "problem2": {
+      "title": "Rejasiz avariyalar va to'xtatishlar",
+      "description": "Motorlar, nasoslar, konveyerlar va boshqa uskunalar kutilmaganda ishdan chiqadi. Bu ishlab chiqarishni to'xtatish, shoshilinch ta'mirlash xarajatlari, buyurtmalarning kechikishi va xom ashyoning isrof bo'lishiga olib keladi."
+    },
+    "problem3": {
+      "title": "Energiya isrofiga real vaqtda nazorat yo'q",
+      "description": "Energiya hisoblagichlari, sensor ma'lumotlari va ishlab chiqarish jurnallari yig'ilmaydi yoki tahlil qilinmaydi. Zavod menejerlari ma'lumotlar o'rniga sezgi asosida qaror qabul qiladilar, bu esa samaradorlik va foyda yo'qotilishiga olib keladi."
+    },
+    "consequences": {
+      "title": "Natijada, zavodlar:",
+      "item1": "Energiya uchun kerakdan ko'proq to'laydi",
+      "item2": "Kerakdan ko'proq CO₂ ishlab chiqaradi",
+      "item3": "Oldini olish mumkin bo'lgan to'xtashlar tufayli pul va vaqt yo'qotadi"
+    }
+  },
+  "solution": {
+    "title": "Bizning yechimimiz",
+    "subtitle": "GreenMind AI — energiya, CO₂ va texnik xizmat uchun zavod \"yordamchisi\"",
+    "intro": "GreenMind AI — AI bilan ishlaydigansanoat yordamchisi bo'lib, u:",
+    "feature1": {
+      "title": "Uskunalarni kuzatadi va anomaliyalarni erta aniqlaydi",
+      "points": [
+        "Motorlar va konveyerlardan tebranish, harorat va boshqa sensor ma'lumotlarini o'qiydi",
+        "Nosozlik sodir bo'lishidan oldin ogohlantirish uchun vaqt qatorlari anomaliyalarini aniqlash modellaridan foydalanadi",
+        "Texnik xizmat guruhlariga \"buzilganda tuzatish\"dan bashoratli texnik xizmatga o'tishda yordam beradi"
+      ]
+    },
+    "feature2": {
+      "title": "Zavodning CO₂ izini real vaqtda hisoblaydi va vizuallashtiradi",
+      "points": [
+        "Elektr energiyasi, gaz va yoqilg'i iste'molini birlashtiradi",
+        "Xalqaro tan olingan emissiya koeffitsientlarini qo'llaydi",
+        "Dashboard'da liniya, mahsulot yoki smena bo'yicha CO₂ ni ko'rsatadi",
+        "Zavodlarga yashil standartlar va xalqaro auditlarga tayyorgarlik ko'rishda yordam beradi"
+      ]
+    },
+    "feature3": {
+      "title": "Muhandislar va operatorlar uchun AI yordamchisi sifatida ishlaydi",
+      "examples": [
+        "Kecha 2-liniya nima uchun to'xtadi?",
+        "Qaysi uskunada eng yuqori energiya isrofi bor?",
+        "Minimal o'zgarishlar bilan CO₂ ni 10% ga qanday kamaytiramiz?"
+      ],
+      "technology": "Zavod bilimlar bazasi (qo'llanmalar, jurnallar, sensor tarixi) bilan LLM dan foydalanadi."
+    },
+    "impact": {
+      "title": "Kutilayotgan ta'sir:",
+      "item1": "Vaqt o'tishi bilan energiya isrofini 10-30% ga kamaytirish",
+      "item2": "Rejasiz to'xtashlar va texnik xizmat xarajatlarini kamaytirish",
+      "item3": "Aniq va eksportga tayyor CO₂ hisobotlari",
+      "item4": "O'zbekistonda raqobatbardosh va barqaror zavodlar"
+    }
+  },
+  "team": {
+    "title": "Bizning jamoa",
+    "subtitle": "Yashil innovatsiyalarga sodiq tajribali mutaxassislar",
+    "member1": {
+      "name": "Suvonov Asrbek",
+      "role": "Asoschisi va Texnologiya Rahbari",
+      "skills": "JavaScript/TypeScript, Python, React, Next.js, Node.js, NestJS, FastAPI, PostgreSQL, Redis",
+      "experience": "LLM dan foydalangan holda AI chatbotlar yaratdi (RAG, embeddings, vektor ma'lumotlar bazalari). Tashqi API'lar va vaqt qatorlari ma'lumotlarini aqlli dashboard'larga integratsiya qildi.",
+      "focus": "Umumiy arxitektura, AI integratsiyasi va real vaqt ma'lumotlar tizimlari"
+    },
+    "member2": {
+      "name": "Boboqulov Ulug'bek",
+      "role": "Ma'lumotlar va AI muhandisi",
+      "skills": "Python, PyTorch, TensorFlow, scikit-learn, Vaqt qatorlari modellashtirish, Anomaliyalarni aniqlash",
+      "experience": "Sanoat ilovalari uchun mashina o'rganishda mutaxassis, ma'lumotlar quvurlari, ETL va asosiy MLOps.",
+      "focus": "Bashoratli texnik xizmat modellari va CO₂ hisoblash mexanizmini loyihalash"
+    },
+    "member3": {
+      "name": "Doniyor Tuychiyev",
+      "role": "Apparat va IoT muhandisi",
+      "skills": "Raspberry Pi, ESP32, Sensor integratsiyasi, MQTT, Modbus, HTTP qurilma aloqasi",
+      "experience": "Sanoat sensor tarmoqlari va real vaqt ma'lumotlarini yig'ish tizimlari tajribasi.",
+      "focus": "Haqiqiy zavod sensorlarini GreenMind AI ga ulash, ishonchli ma'lumot yig'ishni ta'minlash"
+    },
+    "member4": {
+      "name": "Murodova Marjona",
+      "role": "Operatsiyalar rahbari",
+      "skills": "Ishlab chiqarish jarayonlari, Ishlab chiqarish KPI'lari, Zavod operatsiyalari, Manfaatdor tomonlarni boshqarish",
+      "experience": "",
+      "focus": "Haqiqiy zavod ehtiyojlarini tasdiqlash, hamkor zavodlar bilan muloqot qilish"
+    }
+  },
+  "whyUs": {
+    "title": "Nega biz buni hal qila olamiz",
+    "subtitle": "Texnik tajriba va mahalliy tushunchaning noyob kombinatsiyasi",
+    "reason1": {
+      "title": "Dasturiy ta'minot, AI va IoT bo'yicha chuqur bilim",
+      "description": "Jamoamiz to'liq stack dasturlash, mashina o'rganish va apparat integratsiyasida kuchli ko'nikmalarga ega. Biz konseptsiyadan sensor va dashboard'larga ulangan haqiqiy ishlaydigan tizimga qanday o'tishni bilamiz."
+    },
+    "reason2": {
+      "title": "Real vaqt, yuqori yuklamali tizimlar tajribasi",
+      "description": "Bizning oldingi loyihalarimizdan ba'zilari real vaqt ma'lumotlarini vizualizatsiya qilish platformalari (masalan, xaritalar, GPS kuzatuvi, tahlil dashboard'lari), hujjat ma'lumotlaridan foydalangan holda domen-spetsifik savollarga javob beradigan AI chatbotlar va mikroservislar va xabar navbatlari bilan murakkab backend tizimlari."
+    },
+    "reason3": {
+      "title": "O'zbekiston sanoat kontekstini bevosita tushunish",
+      "description": "Biz O'zbekistonda joylashganmiz va zavodlar rejasiz to'xtashlar, energiya narxining oshishi va modernizatsiya qilish hamda global standartlarga javob berish bosimi bilan qanday kurashayotganini ko'rganmiz. Bu bizga texnik malaka va mahalliy tushunchani beradi."
+    },
+    "reason4": {
+      "title": "Mazmunli va yashil ta'sir yaratishga kuchli motivatsiya",
+      "description": "Biz shunchaki \"yana bir ilova\" yaratmayapmiz. Bizning maqsadimiz — zavodlarni samaraliroq va ekologik jihatdan mas'uliyatliroq qilishga yordam berish, O'zbekistonni jahon bozoridagi raqobatbardosh qilish va barqaror rivojlanishga hissa qo'shish."
+    }
+  },
+  "roadmap": {
+    "title": "Bizning yo'l xaritamiz",
+    "subtitle": "G'oyadan ta'sirgacha",
+    "currentStage": "Joriy bosqich: G'oya → Dastlabki prototip",
+    "phase1": {
+      "title": "Prototip",
+      "timeline": "0–2 oy",
+      "items": [
+        "Misol zavod liniyalari, liniya bo'yicha energiya iste'moli va taxminiy CO₂ emissiyalarini ko'rsatadigan veb-dashboard yaratish",
+        "Sintetik yoki namuna ma'lumotlarda oddiy vaqt qatorlari anomaliyalarini aniqlash modelini integratsiya qilish",
+        "LLM asosidagi yordamchini kichik bilimlar bazasiga (qo'llanmalar, PDF hujjatlar) ulash"
+      ]
+    },
+    "phase2": {
+      "title": "1–2 ta pilot zavod bilan MVP",
+      "timeline": "3–6 oy",
+      "items": [
+        "Tanlangan mashinalarga haqiqiy sensorlarni (tebranish, harorat, quvvat o'lchagichlari) o'rnatish yoki ulash",
+        "Ma'lumotlarni GreenMind AI backend'iga uzatish",
+        "Haqiqiy muhitda anomaliyalarni aniqlash modellarini joylashtirish",
+        "Pilot zavodlar uchun haqiqiy CO₂ hisobotlarini yaratish",
+        "Muhandislar va menejerlardan fikr-mulohazalarni yig'ish"
+      ]
+    },
+    "phase3": {
+      "title": "Mahsulotlashtirish",
+      "timeline": "6–12 oy",
+      "items": [
+        "Dashboard'ni kengaytirish: liniya/smena/mahsulot ko'rinishlari, ogohlantirishlar, bildirishnomalar",
+        "Foydalanuvchilarni boshqarish, rol asosidagi kirish va audit jurnallarini qo'shish",
+        "CO₂ hisobotlari va texnik xizmat xulosalarini eksport qilish uchun shablonlar yaratish (PDF / Excel)",
+        "Haqiqiy ma'lumotlar va fikr-mulohazalar bilan model samaradorligini yaxshilash"
+      ]
+    },
+    "phase4": {
+      "title": "Kengaytirish",
+      "timeline": "12+ oy",
+      "items": [
+        "Turli sohalardagi ko'proq zavodlarni ulash (plastmassa, to'qimachilik, oziq-ovqat, qurilish materiallari)",
+        "GreenMind AI ni ixtiyoriy apparat to'plamlari bilan SaaS platformasi sifatida taklif qilish",
+        "Iloji bo'lsa, mavjud ERP / MES tizimlari bilan integratsiya qilish"
+      ]
+    }
+  },
+  "approach": {
+    "title": "Biz buni qanday quramiz",
+    "subtitle": "Bizning texnik yondashuvimiz va asosiy texnologiyalar",
+    "step1": {
+      "title": "Zavod ma'lumotlar manbalarini ulash",
+      "description": "1–2 ta asosiy mashina bilan boshlash (motorlar, konveyerlar). Tebranish va harorat sensorlarini o'rnatish (masalan, ESP32 + sensorlar). Elektr energiyasi va gaz iste'moli ma'lumotlarini o'qish (qo'lda import yoki aqlli hisoblagichlar)."
+    },
+    "step2": {
+      "title": "Ma'lumotlarni qabul qilish va saqlash",
+      "description": "FastAPI yoki NestJS bilan qurilgan ma'lumotlarni qabul qilish API'si. Tuzilgan va vaqt qatorlari ma'lumotlari uchun PostgreSQL (va ehtimol TimescaleDB) dan foydalanish. Xom sensor ma'lumotlari, qayta ishlangan ko'rsatkichlar va hodisa jurnallarini saqlash."
+    },
+    "step3": {
+      "title": "Anomaliyalarni aniqlash va CO₂ tahlili uchun AI qo'llash",
+      "description": "Statistik modellar (masalan, harakatlanuvchi o'rtacha, chegaralar) asosidagi vaqt qatorlari anomaliyalarini aniqlash va biz o'sganimizda mashina o'rganish modellari (masalan, Isolation Forest, LSTM/Autoencoder). Energiya iste'molini standart emissiya koeffitsientlari bilan birlashtiradigan CO₂ hisoblash mexanizmi."
+    },
+    "step4": {
+      "title": "Zavod dashboard'ini yaratish",
+      "description": "React (yoki Next.js/Vite) dan foydalangan holda frontend. WebSockets yoki Server-Sent Events orqali real vaqt yangilanishlari. Menejerlar va muhandislar uchun aniq grafiklar, ogohlantirishlar va xulosalar."
+    },
+    "step5": {
+      "title": "AI yordamchisini integratsiya qilish",
+      "description": "Hujjatlar va embeddinglarni saqlash uchun vektor ma'lumotlar bazasi (masalan, pgvector, ChromaDB) bilan Katta Til Modeli (LLM) dan foydalanish. Zavod qo'llanmalari, FAQ va tarixiy ma'lumotlar asosida savollarga javob berish uchun RAG (Retrieval Augmented Generation)."
+    }
+  },
+  "businessModel": {
+    "title": "Biznes model va ta'sir",
+    "model": {
+      "title": "B2B SaaS + Apparat boshlang'ich to'plami",
+      "item1": "Zavod yoki ishlab chiqarish liniyasi bo'yicha oylik obuna",
+      "item2": "Ixtiyoriy apparat to'plami (sensorlar + gateway) bir martalik yoki lizing modeli sifatida",
+      "item3": "Katta zavodlar uchun maxsus integratsiya xizmatlari"
+    },
+    "impact": {
+      "title": "Ijtimoiy va ekologik ta'sir",
+      "item1": "O'zbekistonning yanada yashil va samarali sanoatga yo'lini qo'llab-quvvatlaydi",
+      "item2": "Zavodlarni xalqaro hamkorlar uchun yanada jozibali qilishga yordam beradi",
+      "item3": "Mintaqada CO₂ emissiyalari va energiya isrofini kamaytirishga hissa qo'shadi"
+    },
+    "differentiation": {
+      "title": "Bizni nima farq qiladi",
+      "intro": "Sanoat monitoringi va bashoratli texnik xizmat uchun global yechimlar mavjud, ammo ularning aksariyati qimmat va mahalliy sharoitlar va tillarga moslashtirilmagan.",
+      "point1": "Mahalliy-birinchi — O'zbekiston va mintaqa zavodlariga qaratilgan, mahalliy qo'llab-quvvatlash va cheklovlarni tushunish bilan",
+      "point2": "Birinchi kundan AI-markazlashgan — faqat dashboard'lar emas, balki haqiqiy AI yordamchisi va CO₂ mexanizmi",
+      "point3": "Mavjud — qisman ma'lumotlar va asta-sekin qo'shilgan sensorlar bilan ham ishlash uchun mo'ljallangan"
+    }
+  },
+  "requestDemo": {
+    "title": "Zavodingizni o'zgartirishga tayyormisiz?",
+    "subtitle": "GreenMind AI haqida ko'proq ma'lumot olish va demo rejalashtirish uchun biz bilan bog'laning",
+    "description": "Markaziy Osiyoda ishlab chiqarish uchun yanada barqaror kelajakni qurishda bizga qo'shiling",
+    "cta": "Telegram'da biz bilan bog'laning",
+    "telegram": "@coder_fs"
+  },
+  "footer": {
+    "tagline": "Markaziy Osiyodagi zavodlar uchun barqaror kelajak quramiz",
+    "copyright": "© 2024 GreenMind AI. Barcha huquqlar himoyalangan.",
+    "madeIn": "O'zbekistonda 💚 bilan yaratildi"
+  }
+}

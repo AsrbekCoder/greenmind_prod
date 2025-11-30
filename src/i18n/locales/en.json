@@ -1,0 +1,236 @@
+{
+  "nav": {
+    "home": "Home",
+    "problem": "Problem & Solution",
+    "team": "Team",
+    "whyUs": "Why Us",
+    "roadmap": "Roadmap",
+    "approach": "Approach",
+    "businessModel": "Business Model",
+    "demo": "Request Demo"
+  },
+  "hero": {
+    "title": "GreenMind AI",
+    "subtitle": "Intelligent Factory Copilot for a Low-Carbon Future",
+    "description": "We help factories in Uzbekistan and Central Asia reduce energy waste, cut CO₂ emissions, and prevent machine failures using AI.",
+    "tagline": "Kamroq chiqindi, ko'proq samaradorlik — AI yordamida.",
+    "ctaProblem": "See the Problem & Solution",
+    "ctaRoadmap": "View Roadmap"
+  },
+  "problem": {
+    "title": "The Problem",
+    "subtitle": "Inefficient, high-emission factories with no visibility",
+    "domain": "Environment, Industry, Productivity (Green Manufacturing & Industry 4.0)",
+    "intro": "Today, many factories in Uzbekistan and the wider Central Asian region face three interconnected problems:",
+    "problem1": {
+      "title": "High and invisible CO₂ emissions",
+      "description": "Most factories rely on electricity, natural gas, and diesel without tracking their real carbon footprint. This makes it difficult to meet future environmental regulations and to work with international partners who require sustainability reporting."
+    },
+    "problem2": {
+      "title": "Unplanned machine failures and downtime",
+      "description": "Motors, pumps, conveyors and other equipment often fail unexpectedly. This leads to production stops, urgent repair costs, delays in orders, and wasted raw materials."
+    },
+    "problem3": {
+      "title": "No real-time insight into energy waste",
+      "description": "Energy meters, sensor data and production logs are either not collected or not analyzed. Factory managers make decisions based on intuition instead of data, which leads to avoidable losses in efficiency and profit."
+    },
+    "consequences": {
+      "title": "As a result, factories:",
+      "item1": "Pay more for energy than they should",
+      "item2": "Produce more CO₂ than necessary",
+      "item3": "Lose money and time due to preventable downtime"
+    }
+  },
+  "solution": {
+    "title": "Our Solution",
+    "subtitle": "GreenMind AI — a factory \"copilot\" for energy, CO₂ and maintenance",
+    "intro": "GreenMind AI is an AI-powered assistant for factories that:",
+    "feature1": {
+      "title": "Monitors machines and detects anomalies early",
+      "points": [
+        "Reads vibration, temperature and other sensor data from motors and conveyors",
+        "Uses time-series anomaly detection models to warn before a failure happens",
+        "Helps maintenance teams move from \"fix when broken\" to predictive maintenance"
+      ]
+    },
+    "feature2": {
+      "title": "Calculates and visualises the factory's CO₂ footprint in real time",
+      "points": [
+        "Aggregates electricity, gas and fuel consumption",
+        "Applies internationally recognised emission factors",
+        "Shows CO₂ per line, per product, or per shift on a dashboard",
+        "Helps factories prepare for green standards and international audits"
+      ]
+    },
+    "feature3": {
+      "title": "Acts as an AI assistant for engineers and operators",
+      "examples": [
+        "Why did Line 2 stop yesterday?",
+        "Which machine has the highest energy waste?",
+        "How can we reduce CO₂ by 10% with minimal changes?"
+      ],
+      "technology": "Uses an LLM with a factory knowledge base (manuals, logs, sensor history)."
+    },
+    "impact": {
+      "title": "Expected impact:",
+      "item1": "10–30% reduction in energy waste over time",
+      "item2": "Lower unplanned downtime and maintenance costs",
+      "item3": "Clear and export-ready CO₂ reports",
+      "item4": "More competitive and sustainable factories in Uzbekistan"
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Experienced professionals committed to green innovation",
+    "member1": {
+      "name": "Suvonov Asrbek",
+      "role": "Founder & Tech Lead",
+      "skills": "JavaScript/TypeScript, Python, React, Next.js, Node.js, NestJS, FastAPI, PostgreSQL, Redis",
+      "experience": "Built AI-powered chatbots using LLMs (RAG, embeddings, vector databases). Integrated external APIs and time-series data into intelligent dashboards.",
+      "focus": "Overall architecture, AI integration, and real-time data systems"
+    },
+    "member2": {
+      "name": "Boboqulov Ulug'bek",
+      "role": "Data & AI Engineer",
+      "skills": "Python, PyTorch, TensorFlow, scikit-learn, Time-series modelling, Anomaly detection",
+      "experience": "Specialized in machine learning for industrial applications, data pipelines, ETL, and basic MLOps.",
+      "focus": "Designing predictive maintenance models and CO₂ calculation engine"
+    },
+    "member3": {
+      "name": "Doniyor Tuychiyev",
+      "role": "Hardware & IoT Engineer",
+      "skills": "Raspberry Pi, ESP32, Sensor integration, MQTT, Modbus, HTTP device communication",
+      "experience": "Experience with industrial sensor networks and real-time data collection systems.",
+      "focus": "Connecting real factory sensors to GreenMind AI, ensuring reliable data collection"
+    },
+    "member4": {
+      "name": "Murodova Marjona",
+      "role": "Operations Lead",
+      "skills": "Manufacturing processes, Production KPIs, Factory operations, Stakeholder management",
+      "experience": "",
+      "focus": "Validating real factory needs, communicating with partner factories"
+    }
+  },
+  "whyUs": {
+    "title": "Why We Can Solve This",
+    "subtitle": "Unique combination of technical expertise and local insight",
+    "reason1": {
+      "title": "Technical depth across software, AI, and IoT",
+      "description": "Our team combines strong skills in full-stack development, machine learning, and hardware integration. We know how to move from a concept to a real, working system connected to sensors and dashboards."
+    },
+    "reason2": {
+      "title": "Experience with real-time, high-load systems",
+      "description": "Some of our previous projects include real-time data visualisation platforms (e.g., maps, GPS tracking, analytics dashboards), AI chatbots that answer domain-specific questions using document data, and complex backend systems with microservices and message queues."
+    },
+    "reason3": {
+      "title": "Direct understanding of Uzbekistan's industrial context",
+      "description": "We are based in Uzbekistan and have seen how factories struggle with unplanned downtime, rising energy costs, and pressure to modernise and meet global standards. This gives us both technical competence and local insight."
+    },
+    "reason4": {
+      "title": "Strong motivation to build meaningful, green impact",
+      "description": "We are not just building \"another app\". Our goal is to help factories become more efficient and environmentally responsible, making Uzbekistan more competitive in the global market and contributing to sustainability."
+    }
+  },
+  "roadmap": {
+    "title": "Our Roadmap",
+    "subtitle": "From idea to impact",
+    "currentStage": "Current Stage: Idea → Early Prototype",
+    "phase1": {
+      "title": "Prototype",
+      "timeline": "0–2 months",
+      "items": [
+        "Build a web dashboard showing example factory lines, energy consumption per line, and estimated CO₂ emissions",
+        "Integrate a simple time-series anomaly detection model on synthetic or sample data",
+        "Connect an LLM-based assistant to a small knowledge base (manuals, PDF docs)"
+      ]
+    },
+    "phase2": {
+      "title": "MVP with 1–2 pilot factories",
+      "timeline": "3–6 months",
+      "items": [
+        "Install or connect to real sensors (vibration, temperature, power meters) on selected machines",
+        "Stream data into the GreenMind AI backend",
+        "Deploy anomaly detection models in a real environment",
+        "Generate real CO₂ reports for pilot factories",
+        "Collect feedback from engineers and managers"
+      ]
+    },
+    "phase3": {
+      "title": "Productisation",
+      "timeline": "6–12 months",
+      "items": [
+        "Expand dashboard: line/shift/product views, alerts, notifications",
+        "Add user management, role-based access, and audit logs",
+        "Build templates for exporting CO₂ reports and maintenance summaries (PDF / Excel)",
+        "Improve model performance with real data and feedback"
+      ]
+    },
+    "phase4": {
+      "title": "Scaling",
+      "timeline": "12+ months",
+      "items": [
+        "Onboard more factories in different industries (plastics, textiles, food, construction materials)",
+        "Offer GreenMind AI as a SaaS platform with optional hardware kits",
+        "Integrate with existing ERP / MES systems where possible"
+      ]
+    }
+  },
+  "approach": {
+    "title": "How We'll Build It",
+    "subtitle": "Our technical approach and key technologies",
+    "step1": {
+      "title": "Connect factory data sources",
+      "description": "Start with 1–2 key machines (motors, conveyors). Install vibration and temperature sensors (e.g. ESP32 + sensors). Read electricity and gas consumption data (manual import or smart meters)."
+    },
+    "step2": {
+      "title": "Ingest and store data",
+      "description": "Data ingestion API built with FastAPI or NestJS. Use PostgreSQL (and possibly TimescaleDB) for structured and time-series data. Store raw sensor data, processed metrics, and event logs."
+    },
+    "step3": {
+      "title": "Apply AI for anomaly detection and CO₂ analytics",
+      "description": "Time-series anomaly detection using statistical models (e.g., moving averages, thresholds) as baseline and machine learning models (e.g., Isolation Forest, LSTM/Autoencoder) as we grow. CO₂ calculation engine combining energy usage with standard emission factors."
+    },
+    "step4": {
+      "title": "Build the factory dashboard",
+      "description": "Frontend using React (or Next.js/Vite). Real-time updates via WebSockets or Server-Sent Events. Clear charts, alerts, and summaries for managers and engineers."
+    },
+    "step5": {
+      "title": "Integrate an AI assistant",
+      "description": "Use a Large Language Model (LLM) with a vector database (e.g. pgvector, ChromaDB) to store documents and embeddings. RAG (Retrieval Augmented Generation) to answer questions based on factory manuals, FAQs, and historic data."
+    }
+  },
+  "businessModel": {
+    "title": "Business Model & Impact",
+    "model": {
+      "title": "B2B SaaS + Hardware Starter Kit",
+      "item1": "Monthly subscription per factory or per production line",
+      "item2": "Optional hardware kit (sensors + gateway) as a one-time or leasing model",
+      "item3": "Custom integration services for larger factories"
+    },
+    "impact": {
+      "title": "Social & Environmental Impact",
+      "item1": "Supports Uzbekistan's path toward greener, more efficient industry",
+      "item2": "Helps factories become more attractive for international partners",
+      "item3": "Contributes to reduced CO₂ emissions and energy waste in the region"
+    },
+    "differentiation": {
+      "title": "What Makes Us Different",
+      "intro": "There are global solutions for industrial monitoring and predictive maintenance, but most are expensive and not adapted to local conditions and languages.",
+      "point1": "Local-first — focused on factories in Uzbekistan and the region, with local support and understanding of constraints",
+      "point2": "AI-centric from day one — not just dashboards, but a real AI assistant and CO₂ engine",
+      "point3": "Accessible — designed to work even with partial data and gradually added sensors"
+    }
+  },
+  "requestDemo": {
+    "title": "Ready to Transform Your Factory?",
+    "subtitle": "Get in touch with us to learn more about GreenMind AI and schedule a demo",
+    "description": "Join us in building a more sustainable future for manufacturing in Central Asia",
+    "cta": "Contact us on Telegram",
+    "telegram": "@coder_fs"
+  },
+  "footer": {
+    "tagline": "Building a sustainable future for factories in Central Asia",
+    "copyright": "© 2024 GreenMind AI. All rights reserved.",
+    "madeIn": "Made in Uzbekistan with 💚"
+  }
+}
