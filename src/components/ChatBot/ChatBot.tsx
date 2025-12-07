@@ -17,7 +17,7 @@ interface ChatBotProps {
   onSendMessage?: (message: string) => void;
 }
 
-const API_URL = "http://localhost:3002/api";
+const API_URL = "https://api-prod.greenmind.edu-zon.uz/api";
 export const ChatBot = ({ inline = false, onSendMessage }: ChatBotProps) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(inline ? true : false);

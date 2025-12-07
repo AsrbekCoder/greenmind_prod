@@ -124,7 +124,7 @@ interface BackendAnalysisResponse {
 type ZoneSeverity = "ok" | "warning" | "critical";
 
 // API base URL
-const API_BASE_URL = "http://localhost:3002/api";
+const API_BASE_URL = "https://api-prod.greenmind.edu-zon.uz/api";
 
 export const BottleFactoryTool = () => {
   const { i18n } = useTranslation();
@@ -226,21 +226,33 @@ export const BottleFactoryTool = () => {
       const mappedData: AnalysisResult = {
         success: rawData.success,
         factoryName: "Bottle Factory",
-        kpis: rawData.analysis?.metrics && rawData.analysis.metrics.avg_energy_per_1000_bottles_kwh !== undefined ? {
-          avg_energy_per_1000_bottles_kwh: rawData.analysis.metrics.avg_energy_per_1000_bottles_kwh,
-          avg_scrap_rate_percent: 0, // Not in backend response
-          estimated_co2_tonnes: 0, // Not in backend response
-        } : undefined,
-        issues: rawData.analysis?.issues ? rawData.analysis.issues.map((issue: BackendIssue) => ({
-          id: issue.zone_id || Math.random().toString(),
-          zoneId: issue.zone_id,
-          severity: issue.severity === "high" ? "critical" : issue.severity === "medium" ? "warning" : "ok",
-          title: issue.title,
-          description: issue.description,
-          metrics: issue.metrics,
-          estimated_savings_kwh: issue.estimated_savings_kwh,
-          estimated_savings_usd: issue.estimated_savings_usd,
-        })) : undefined,
+        kpis:
+          rawData.analysis?.metrics &&
+          rawData.analysis.metrics.avg_energy_per_1000_bottles_kwh !== undefined
+            ? {
+                avg_energy_per_1000_bottles_kwh:
+                  rawData.analysis.metrics.avg_energy_per_1000_bottles_kwh,
+                avg_scrap_rate_percent: 0, // Not in backend response
+                estimated_co2_tonnes: 0, // Not in backend response
+              }
+            : undefined,
+        issues: rawData.analysis?.issues
+          ? rawData.analysis.issues.map((issue: BackendIssue) => ({
+              id: issue.zone_id || Math.random().toString(),
+              zoneId: issue.zone_id,
+              severity:
+                issue.severity === "high"
+                  ? "critical"
+                  : issue.severity === "medium"
+                  ? "warning"
+                  : "ok",
+              title: issue.title,
+              description: issue.description,
+              metrics: issue.metrics,
+              estimated_savings_kwh: issue.estimated_savings_kwh,
+              estimated_savings_usd: issue.estimated_savings_usd,
+            }))
+          : undefined,
         analysisMarkdown: rawData.analysis?.overall_assessment || "",
       };
 
@@ -289,7 +301,12 @@ export const BottleFactoryTool = () => {
 
   // Get issue count for a zone
   const getZoneIssueCount = (zoneId: string): number => {
-    if (!analysisResult || !analysisResult.issues || !Array.isArray(analysisResult.issues)) return 0;
+    if (
+      !analysisResult ||
+      !analysisResult.issues ||
+      !Array.isArray(analysisResult.issues)
+    )
+      return 0;
     return analysisResult.issues.filter((issue) => issue.zoneId === zoneId)
       .length;
   };
@@ -314,9 +331,17 @@ export const BottleFactoryTool = () => {
     const keyLower = key.toLowerCase();
 
     if (keyLower.includes("temp")) return `${value.toFixed(1)}°C`;
-    if (keyLower.includes("power") || keyLower.includes("kwh") || keyLower.includes("kw"))
+    if (
+      keyLower.includes("power") ||
+      keyLower.includes("kwh") ||
+      keyLower.includes("kw")
+    )
       return `${value.toFixed(1)} kW`;
-    if (keyLower.includes("efficiency") || keyLower.includes("accuracy") || keyLower.includes("rate"))
+    if (
+      keyLower.includes("efficiency") ||
+      keyLower.includes("accuracy") ||
+      keyLower.includes("rate")
+    )
       return `${value.toFixed(1)}%`;
     if (keyLower.includes("downtime") || keyLower.includes("min"))
       return `${value.toFixed(0)} min`;
@@ -365,10 +390,10 @@ export const BottleFactoryTool = () => {
       <div className={styles.header}>
         <h2 className={styles.title}>Bottle factory demo (tool)</h2>
         <p className={styles.subtitle}>
-          This is a live simulation of a bottle factory with real-time sensor data.
-          Click 'Analyze factory' to see how GreenMind AI detects energy waste,
-          CO₂ emissions, and mechanical issues, then highlights problem zones on the
-          factory map.
+          This is a live simulation of a bottle factory with real-time sensor
+          data. Click 'Analyze factory' to see how GreenMind AI detects energy
+          waste, CO₂ emissions, and mechanical issues, then highlights problem
+          zones on the factory map.
         </p>
       </div>
 
@@ -431,11 +456,16 @@ export const BottleFactoryTool = () => {
                   <tbody>
                     <tr>
                       <td>Total Power</td>
-                      <td>{readings.summary.total_power_kw.toLocaleString()} kW</td>
+                      <td>
+                        {readings.summary.total_power_kw.toLocaleString()} kW
+                      </td>
                     </tr>
                     <tr>
                       <td>Production Rate</td>
-                      <td>{readings.summary.production_rate_bottles_per_hour.toLocaleString()} bottles/hr</td>
+                      <td>
+                        {readings.summary.production_rate_bottles_per_hour.toLocaleString()}{" "}
+                        bottles/hr
+                      </td>
                     </tr>
                     <tr>
                       <td>Overall Efficiency</td>
@@ -468,13 +498,16 @@ export const BottleFactoryTool = () => {
                 </div>
                 <div className={styles.kpiTile}>
                   <div className={styles.kpiValue}>
-                    {analysisResult.kpis.avg_scrap_rate_percent?.toFixed(1) || "N/A"}%
+                    {analysisResult.kpis.avg_scrap_rate_percent?.toFixed(1) ||
+                      "N/A"}
+                    %
                   </div>
                   <div className={styles.kpiLabel}>Scrap rate</div>
                 </div>
                 <div className={styles.kpiTile}>
                   <div className={styles.kpiValue}>
-                    {analysisResult.kpis.estimated_co2_tonnes?.toFixed(1) || "N/A"}
+                    {analysisResult.kpis.estimated_co2_tonnes?.toFixed(1) ||
+                      "N/A"}
                   </div>
                   <div className={styles.kpiLabel}>t CO₂ (7 days)</div>
                 </div>
@@ -511,7 +544,9 @@ export const BottleFactoryTool = () => {
         {analysisResult && (
           <div className={styles.issuesSection}>
             <h3 className={styles.sectionTitle}>Detected Issues</h3>
-            {!analysisResult.issues || !Array.isArray(analysisResult.issues) || analysisResult.issues.length === 0 ? (
+            {!analysisResult.issues ||
+            !Array.isArray(analysisResult.issues) ||
+            analysisResult.issues.length === 0 ? (
               <p className={styles.noIssuesText}>
                 No issues detected. Factory is operating normally.
               </p>
@@ -566,7 +601,9 @@ export const BottleFactoryTool = () => {
                     {(issue.estimated_savings_kwh !== undefined ||
                       issue.estimated_savings_usd !== undefined) && (
                       <div className={styles.savingsContainer}>
-                        <span className={styles.savingsLabel}>Potential Savings:</span>
+                        <span className={styles.savingsLabel}>
+                          Potential Savings:
+                        </span>
                         <div className={styles.savingsBadges}>
                           {issue.estimated_savings_kwh !== undefined &&
                             issue.estimated_savings_kwh > 0 && (
