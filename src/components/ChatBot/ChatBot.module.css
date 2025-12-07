@@ -5,6 +5,12 @@
   z-index: 9999;
 }
 
+.chatBotInline {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 /* Floating Button */
 .floatingButton {
   position: relative;
@@ -122,6 +128,18 @@
   overflow: hidden;
   animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
+}
+
+.chatWindowInline {
+  width: 100%;
+  height: 500px;
+  background: var(--bg-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
 @keyframes slideUp {

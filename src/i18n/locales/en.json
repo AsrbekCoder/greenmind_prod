@@ -7,7 +7,7 @@
     "roadmap": "Roadmap",
     "approach": "Approach",
     "businessModel": "Business Model",
-    "demo": "Request Demo"
+    "demo": "Demo"
   },
   "hero": {
     "title": "GreenMind AI",
@@ -232,5 +232,68 @@
     "tagline": "Building a sustainable future for factories in Central Asia",
     "copyright": "© 2024 GreenMind AI. All rights reserved.",
     "madeIn": "Made in Uzbekistan with 💚"
+  },
+  "demo": {
+    "hero": {
+      "badge": "Live Demo",
+      "title": "GreenMind AI – real-time CO₂ & energy copilot for factories",
+      "subtitle": "On this page you can see how GreenMind AI analyzes a factory's energy usage, CO₂ emissions and equipment health using AI. Watch the demo video or try chatting with the AI in real time."
+    },
+    "demoVideo": {
+      "title": "Demo video",
+      "intro": "In this demo video you will see:",
+      "point1": "Entering mock data from a brick factory (energy, gas, production)",
+      "point2": "Getting CO₂ calculations and efficiency analysis",
+      "point3": "Receiving maintenance tips based on vibration anomalies"
+    },
+    "whatThisShows": {
+      "title": "What this demo shows",
+      "point1": {
+        "number": "1",
+        "title": "Data in → Analysis out",
+        "description": "The system takes factory data (electricity usage, gas consumption, production volume, sensor readings) and transforms it into actionable insights."
+      },
+      "point2": {
+        "number": "2",
+        "title": "Real problem solver",
+        "description": "Most factories don't track CO₂, energy waste, and machine health in an intelligent way. They rely on manual calculations and reactive maintenance."
+      },
+      "point3": {
+        "number": "3",
+        "title": "AI copilot approach",
+        "description": "GreenMind AI acts as a copilot that turns factory data into practical suggestions: reduce emissions, optimize energy, predict equipment failures."
+      }
+    },
+    "techStack": {
+      "title": "Tech stack & current stage",
+      "frontend": {
+        "title": "Frontend",
+        "description": "React, TypeScript, CSS Modules, React Markdown for rendering AI messages"
+      },
+      "backend": {
+        "title": "Backend & AI",
+        "description": "Node.js, Express, Axios, Google Gemini API (Gemini 1.5 Flash), REST endpoints"
+      },
+      "demoData": {
+        "title": "Demo data",
+        "description": "Mock datasets for a brick factory – daily electricity/gas usage, CO₂ factors, production volume, scrap rate, furnace temperature, conveyor vibration"
+      },
+      "roadmap": {
+        "title": "Roadmap",
+        "description": "Stage = MVP. Next steps: pilot with 1–2 real factories, connect real sensors, alert system and CO₂ dashboards"
+      }
+    },
+    "liveChat": {
+      "title": "Try GreenMind AI (Live demo)",
+      "description": "Chat with the AI about CO₂ emissions, energy waste, machine health, and more. The AI supports",
+      "languages": "Uzbek, Russian and English",
+      "exampleLabel": "Example questions:"
+    },
+    "apiAccess": {
+      "title": "API access example",
+      "description": "GreenMind AI can also be used via REST API:",
+      "requestLabel": "Request:",
+      "responseLabel": "Response:"
+    }
   }
 }

@@ -7,7 +7,7 @@
     "roadmap": "Yo'l xaritasi",
     "approach": "Yondashuv",
     "businessModel": "Biznes model",
-    "demo": "Demo so'rash"
+    "demo": "Demo"
   },
   "hero": {
     "title": "GreenMind AI",
@@ -232,5 +232,68 @@
     "tagline": "Markaziy Osiyodagi zavodlar uchun barqaror kelajak quramiz",
     "copyright": "© 2024 GreenMind AI. Barcha huquqlar himoyalangan.",
     "madeIn": "O'zbekistonda 💚 bilan yaratildi"
+  },
+  "demo": {
+    "hero": {
+      "badge": "Jonli Demo",
+      "title": "GreenMind AI – zavodlar uchun real vaqtdagi CO₂ va energiya yordamchisi",
+      "subtitle": "Bu sahifada GreenMind AI zavodning energiya iste'moli, CO₂ chiqindilari va uskunalar holatini AI yordamida qanday tahlil qilishini ko'rishingiz mumkin. Demo videoni tomosha qiling yoki AI bilan real vaqtda suhbatlashib ko'ring."
+    },
+    "demoVideo": {
+      "title": "Demo video",
+      "intro": "Bu demo videoda siz quyidagilarni ko'rasiz:",
+      "point1": "G'isht zavodidan test ma'lumotlarini kiritish (energiya, gaz, ishlab chiqarish)",
+      "point2": "CO₂ hisob-kitoblari va samaradorlik tahlilini olish",
+      "point3": "Tebranish anomaliyalari asosida texnik xizmat bo'yicha maslahatlar olish"
+    },
+    "whatThisShows": {
+      "title": "Bu demo nima ko'rsatadi",
+      "point1": {
+        "number": "1",
+        "title": "Ma'lumotlar kiradi → Tahlil chiqadi",
+        "description": "Tizim zavod ma'lumotlarini (elektr energiyasi iste'moli, gaz sarfi, ishlab chiqarish hajmi, sensor ko'rsatkichlari) qabul qiladi va ularni amaliy tavsiyalarga aylantiradi."
+      },
+      "point2": {
+        "number": "2",
+        "title": "Haqiqiy muammolarni hal qiluvchi",
+        "description": "Ko'pgina zavodlar CO₂, energiya isrofi va mashinalar holatini aqlli tarzda kuzatmaydi. Ular qo'lda hisob-kitoblarga va reaktiv texnik xizmatga tayanadi."
+      },
+      "point3": {
+        "number": "3",
+        "title": "AI yordamchisi yondashuvi",
+        "description": "GreenMind AI zavod ma'lumotlarini amaliy takliflarga aylantiradigan yordamchi sifatida ishlaydi: chiqindilarni kamaytirish, energiyani optimallashtirish, uskunalar nosozliklarini bashorat qilish."
+      }
+    },
+    "techStack": {
+      "title": "Texnologik stek va joriy bosqich",
+      "frontend": {
+        "title": "Frontend",
+        "description": "React, TypeScript, CSS Modules, AI xabarlarini ko'rsatish uchun React Markdown"
+      },
+      "backend": {
+        "title": "Backend va AI",
+        "description": "Node.js, Express, Axios, Google Gemini API (Gemini 1.5 Flash), REST endpoints"
+      },
+      "demoData": {
+        "title": "Demo ma'lumotlari",
+        "description": "G'isht zavodi uchun test ma'lumotlar to'plamlari – kunlik elektr energiyasi/gaz iste'moli, CO₂ koeffitsientlari, ishlab chiqarish hajmi, yaroqsiz mahsulot ulushi, pech harorati, konveyer tebranishi"
+      },
+      "roadmap": {
+        "title": "Yo'l xaritasi",
+        "description": "Bosqich = MVP. Keyingi qadamlar: 1-2 haqiqiy zavod bilan pilot, haqiqiy sensorlarni ulash, ogohlantirish tizimi va CO₂ panellari"
+      }
+    },
+    "liveChat": {
+      "title": "GreenMind AI ni sinab ko'ring (Jonli demo)",
+      "description": "AI bilan CO₂ chiqindilari, energiya isrofi, mashinalar holati va boshqa ko'p narsalar haqida suhbatlashing. AI qo'llab-quvvatlaydi",
+      "languages": "o'zbek, rus va ingliz tillarini",
+      "exampleLabel": "Misol savollar:"
+    },
+    "apiAccess": {
+      "title": "API ga kirish namunasi",
+      "description": "GreenMind AI REST API orqali ham ishlatilishi mumkin:",
+      "requestLabel": "So'rov:",
+      "responseLabel": "Javob:"
+    }
   }
 }

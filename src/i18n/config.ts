@@ -5,6 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import en from './locales/en.json';
 import uz from './locales/uz.json';
 import ru from './locales/ru.json';
+import tr from './locales/tr.json';
 
 i18n
   .use(LanguageDetector)
@@ -14,10 +15,11 @@ i18n
       en: { translation: en },
       uz: { translation: uz },
       ru: { translation: ru },
+      tr: { translation: tr },
     },
     lng: 'en',
     fallbackLng: 'en',
-    supportedLngs: ['en', 'uz', 'ru'],
+    supportedLngs: ['en', 'uz', 'ru', 'tr'],
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],

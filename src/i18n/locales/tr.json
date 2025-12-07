@@ -1,0 +1,299 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "problem": "Sorun ve Çözüm",
+    "team": "Ekip",
+    "whyUs": "Neden Biz",
+    "roadmap": "Yol Haritası",
+    "approach": "Yaklaşım",
+    "businessModel": "İş Modeli",
+    "demo": "Demo"
+  },
+  "hero": {
+    "title": "GreenMind AI",
+    "subtitle": "Düşük Karbonlu Gelecek için Akıllı Fabrika Yardımcısı",
+    "description": "Özbekistan ve Orta Asya'daki fabrikalara AI kullanarak enerji israfını azaltmada, CO₂ emisyonlarını düşürmede ve makine arızalarını önlemede yardımcı oluyoruz.",
+    "tagline": "Kamroq chiqindi, ko'proq samaradorlik — AI yordamida.",
+    "ctaProblem": "Sorunu ve Çözümü Görün",
+    "ctaRoadmap": "Yol Haritasını Görüntüle"
+  },
+  "problem": {
+    "title": "Sorun",
+    "subtitle": "Verimsiz, yüksek emisyonlu ve görünürlüğü olmayan fabrikalar",
+    "domain": "Çevre, Sanayi, Verimlilik (Yeşil Üretim ve Endüstri 4.0)",
+    "intro": "Bugün Özbekistan ve daha geniş Orta Asya bölgesindeki birçok fabrika birbirine bağlı üç sorunla karşı karşıya:",
+    "problem1": {
+      "title": "Yüksek ve görünmez CO₂ emisyonları",
+      "description": "Çoğu fabrika elektrik, doğal gaz ve dizel kullanır ancak gerçek karbon ayak izini takip etmez. Bu, gelecekteki çevre düzenlemelerine uymayı ve sürdürülebilirlik raporlaması gerektiren uluslararası ortaklarla çalışmayı zorlaştırır."
+    },
+    "problem2": {
+      "title": "Plansız makine arızaları ve duruş süreleri",
+      "description": "Motorlar, pompalar, konveyörler ve diğer ekipmanlar genellikle beklenmedik şekilde arızalanır. Bu, üretim duraklarına, acil onarım maliyetlerine, sipariş gecikmelerine ve hammadde israfına yol açar."
+    },
+    "problem3": {
+      "title": "Enerji israfına gerçek zamanlı görünürlük yok",
+      "description": "Enerji sayaçları, sensör verileri ve üretim kayıtları ya toplanmıyor ya da analiz edilmiyor. Fabrika yöneticileri veri yerine sezgiye dayalı kararlar alıyor, bu da önlenebilir verimlilik ve kar kayıplarına yol açıyor."
+    },
+    "consequences": {
+      "title": "Sonuç olarak fabrikalar:",
+      "item1": "Enerji için gereğinden fazla ödeme yapıyor",
+      "item2": "Gerekenden fazla CO₂ üretiyor",
+      "item3": "Önlenebilir duruş süreleri nedeniyle para ve zaman kaybediyor"
+    }
+  },
+  "solution": {
+    "title": "Çözümümüz",
+    "subtitle": "GreenMind AI — enerji, CO₂ ve bakım için fabrika \"yardımcısı\"",
+    "intro": "GreenMind AI, şunları yapan AI destekli bir fabrika asistanıdır:",
+    "feature1": {
+      "title": "Makineleri izler ve anormallikleri erken tespit eder",
+      "points": [
+        "Motorlar ve konveyörlerden titreşim, sıcaklık ve diğer sensör verilerini okur",
+        "Arıza olmadan önce uyarmak için zaman serisi anomali tespit modellerini kullanır",
+        "Bakım ekiplerinin \"bozulduğunda onar\"dan öngörücü bakıma geçmesine yardımcı olur"
+      ]
+    },
+    "feature2": {
+      "title": "Fabrikanın CO₂ ayak izini gerçek zamanlı hesaplar ve görselleştirir",
+      "points": [
+        "Elektrik, gaz ve yakıt tüketimini toplar",
+        "Uluslararası kabul görmüş emisyon faktörlerini uygular",
+        "Panoda hat, ürün veya vardiya başına CO₂'yi gösterir",
+        "Fabrikalara yeşil standartlara ve uluslararası denetimlere hazırlanmada yardımcı olur"
+      ]
+    },
+    "feature3": {
+      "title": "Mühendisler ve operatörler için AI asistanı olarak çalışır",
+      "examples": [
+        "Dün Hat 2 neden durdu?",
+        "Hangi makinede en yüksek enerji israfı var?",
+        "CO₂'yi minimal değişikliklerle %10 nasıl azaltabiliriz?"
+      ],
+      "technology": "Fabrika bilgi tabanı (kılavuzlar, kayıtlar, sensör geçmişi) ile bir LLM kullanır."
+    },
+    "impact": {
+      "title": "Beklenen etki:",
+      "item1": "Zaman içinde enerji israfında %10-30 azalma",
+      "item2": "Plansız duruş sürelerinde ve bakım maliyetlerinde azalma",
+      "item3": "Açık ve ihracata hazır CO₂ raporları",
+      "item4": "Özbekistan'da daha rekabetçi ve sürdürülebilir fabrikalar"
+    }
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "subtitle": "Yeşil inovasyona kendini adamış deneyimli profesyoneller",
+    "member1": {
+      "name": "Suvonov Asrbek",
+      "role": "Kurucu ve Teknoloji Lideri",
+      "skills": "JavaScript/TypeScript, Python, React, Next.js, Node.js, NestJS, FastAPI, PostgreSQL, Redis",
+      "experience": "LLM'ler kullanarak AI destekli chatbotlar oluşturdu (RAG, gömülmeler, vektör veritabanları). Harici API'leri ve zaman serisi verilerini akıllı panolara entegre etti.",
+      "focus": "Genel mimari, AI entegrasyonu ve gerçek zamanlı veri sistemleri"
+    },
+    "member2": {
+      "name": "Boboqulov Ulug'bek",
+      "role": "Veri ve AI Mühendisi",
+      "skills": "Python, PyTorch, TensorFlow, scikit-learn, Zaman serisi modelleme, Anomali tespiti",
+      "experience": "Endüstriyel uygulamalar için makine öğrenmede uzmanlaşmış, veri hatları, ETL ve temel MLOps.",
+      "focus": "Öngörücü bakım modellerinin ve CO₂ hesaplama motorunun tasarlanması"
+    },
+    "member3": {
+      "name": "Doniyor Tuychiyev",
+      "role": "Donanım ve IoT Mühendisi",
+      "skills": "Raspberry Pi, ESP32, Sensör entegrasyonu, MQTT, Modbus, HTTP cihaz iletişimi",
+      "experience": "Endüstriyel sensör ağları ve gerçek zamanlı veri toplama sistemleri deneyimi.",
+      "focus": "Gerçek fabrika sensörlerini GreenMind AI'ya bağlama, güvenilir veri toplamayı sağlama"
+    },
+    "member4": {
+      "name": "Murodova Marjona",
+      "role": "Operasyon Lideri",
+      "skills": "Üretim süreçleri, Üretim KPI'ları, Fabrika operasyonları, Paydaş yönetimi",
+      "experience": "",
+      "focus": "Gerçek fabrika ihtiyaçlarını doğrulama, ortak fabrikalarla iletişim"
+    }
+  },
+  "whyUs": {
+    "title": "Bunu Neden Çözebiliriz",
+    "subtitle": "Teknik uzmanlık ve yerel içgörünün benzersiz kombinasyonu",
+    "reason1": {
+      "title": "Yazılım, AI ve IoT'de teknik derinlik",
+      "description": "Ekibimiz full-stack geliştirme, makine öğrenimi ve donanım entegrasyonunda güçlü becerilere sahip. Bir konseptten sensörlere ve panolara bağlı gerçek, çalışan bir sisteme nasıl geçileceğini biliyoruz."
+    },
+    "reason2": {
+      "title": "Gerçek zamanlı, yüksek yüklü sistemlerle deneyim",
+      "description": "Önceki projelerimizden bazıları gerçek zamanlı veri görselleştirme platformları (örn. haritalar, GPS takibi, analitik panolar), belge verilerini kullanarak alana özgü soruları yanıtlayan AI chatbotları ve mikro hizmetler ve mesaj kuyrukları ile karmaşık backend sistemlerini içerir."
+    },
+    "reason3": {
+      "title": "Özbekistan'ın endüstriyel bağlamının doğrudan anlaşılması",
+      "description": "Özbekistan'da merkezimiz var ve fabrikalarin plansız duruş süreleri, artan enerji maliyetleri ve modernleşme ile küresel standartlara uyma baskısı ile nasıl mücadele ettiğini gördük. Bu bize hem teknik yetkinlik hem de yerel içgörü sağlıyor."
+    },
+    "reason4": {
+      "title": "Anlamlı, yeşil etki yaratmak için güçlü motivasyon",
+      "description": "Sadece \"başka bir uygulama\" yapmıyoruz. Amacımız fabrikalara daha verimli ve çevreye duyarlı olmalarında yardımcı olmak, Özbekistan'ı küresel pazarda daha rekabetçi hale getirmek ve sürdürülebilirliğe katkıda bulunmak."
+    }
+  },
+  "roadmap": {
+    "title": "Yol Haritamız",
+    "subtitle": "Fikirden etkiye",
+    "currentStage": "Mevcut Aşama: Fikir → Erken Prototip",
+    "phase1": {
+      "title": "Prototip",
+      "timeline": "0–2 ay",
+      "items": [
+        "Örnek fabrika hatlarını, hat başına enerji tüketimini ve tahmini CO₂ emisyonlarını gösteren bir web paneli oluşturma",
+        "Sentetik veya örnek veriler üzerinde basit bir zaman serisi anomali tespit modeli entegre etme",
+        "LLM tabanlı bir asistanı küçük bir bilgi tabanına (kılavuzlar, PDF belgeleri) bağlama"
+      ]
+    },
+    "phase2": {
+      "title": "1–2 pilot fabrika ile MVP",
+      "timeline": "3–6 ay",
+      "items": [
+        "Seçilen makinelere gerçek sensörler (titreşim, sıcaklık, güç sayaçları) kurma veya bağlama",
+        "GreenMind AI backend'ine veri akışı",
+        "Gerçek ortamda anomali tespit modellerini dağıtma",
+        "Pilot fabrikalar için gerçek CO₂ raporları oluşturma",
+        "Mühendisler ve yöneticilerden geri bildirim toplama"
+      ]
+    },
+    "phase3": {
+      "title": "Ürünleştirme",
+      "timeline": "6–12 ay",
+      "items": [
+        "Panoyu genişletme: hat/vardiya/ürün görünümleri, alarmlar, bildirimler",
+        "Kullanıcı yönetimi, rol tabanlı erişim ve denetim günlükleri ekleme",
+        "CO₂ raporlarını ve bakım özetlerini dışa aktarma için şablonlar oluşturma (PDF / Excel)",
+        "Gerçek veri ve geri bildirimle model performansını iyileştirme"
+      ]
+    },
+    "phase4": {
+      "title": "Ölçeklendirme",
+      "timeline": "12+ ay",
+      "items": [
+        "Farklı sektörlerdeki daha fazla fabrikayı (plastik, tekstil, gıda, inşaat malzemeleri) dahil etme",
+        "GreenMind AI'yı isteğe bağlı donanım kitleri ile SaaS platformu olarak sunma",
+        "Mümkün olduğunda mevcut ERP / MES sistemleriyle entegre olma"
+      ]
+    }
+  },
+  "approach": {
+    "title": "Nasıl Oluşturacağız",
+    "subtitle": "Teknik yaklaşımımız ve temel teknolojiler",
+    "step1": {
+      "title": "Fabrika veri kaynaklarını bağlama",
+      "description": "1–2 ana makine ile başlama (motorlar, konveyörler). Titreşim ve sıcaklık sensörleri kurma (örn. ESP32 + sensörler). Elektrik ve gaz tüketim verilerini okuma (manuel içe aktarma veya akıllı sayaçlar)."
+    },
+    "step2": {
+      "title": "Veri alma ve depolama",
+      "description": "FastAPI veya NestJS ile oluşturulmuş veri alma API'si. Yapılandırılmış ve zaman serisi verileri için PostgreSQL (ve muhtemelen TimescaleDB) kullanma. Ham sensör verilerini, işlenmiş metrikleri ve olay günlüklerini depolama."
+    },
+    "step3": {
+      "title": "Anomali tespiti ve CO₂ analitiği için AI uygulama",
+      "description": "Temel olarak istatistiksel modeller (örn. hareketli ortalamalar, eşikler) kullanan zaman serisi anomali tespiti ve büyüdükçe makine öğrenimi modelleri (örn. Isolation Forest, LSTM/Autoencoder). Enerji kullanımını standart emisyon faktörleriyle birleştiren CO₂ hesaplama motoru."
+    },
+    "step4": {
+      "title": "Fabrika panosunu oluşturma",
+      "description": "React (veya Next.js/Vite) kullanarak frontend. WebSockets veya Server-Sent Events ile gerçek zamanlı güncellemeler. Yöneticiler ve mühendisler için net grafikler, alarmlar ve özetler."
+    },
+    "step5": {
+      "title": "AI asistanını entegre etme",
+      "description": "Belgeleri ve gömülmeleri depolamak için bir vektör veritabanı (örn. pgvector, ChromaDB) ile Büyük Dil Modeli (LLM) kullanma. Fabrika kılavuzları, SSS'ler ve geçmiş verilere dayalı soruları yanıtlamak için RAG (Retrieval Augmented Generation)."
+    }
+  },
+  "businessModel": {
+    "title": "İş Modeli ve Etki",
+    "model": {
+      "title": "B2B SaaS + Donanım Başlangıç Kiti",
+      "item1": "Fabrika veya üretim hattı başına aylık abonelik",
+      "item2": "İsteğe bağlı donanım kiti (sensörler + ağ geçidi) tek seferlik veya kiralama modeli olarak",
+      "item3": "Daha büyük fabrikalar için özel entegrasyon hizmetleri"
+    },
+    "impact": {
+      "title": "Sosyal ve Çevresel Etki",
+      "item1": "Özbekistan'ın daha yeşil, daha verimli sanayiye giden yolunu destekler",
+      "item2": "Fabrikalara uluslararası ortaklar için daha çekici olmada yardımcı olur",
+      "item3": "Bölgede azaltılmış CO₂ emisyonlarına ve enerji israfına katkıda bulunur"
+    },
+    "differentiation": {
+      "title": "Bizi Farklı Kılan",
+      "intro": "Endüstriyel izleme ve öngörücü bakım için küresel çözümler var, ancak çoğu pahalı ve yerel koşullara ve dillere uyarlanmamış.",
+      "point1": "Yerel öncelikli — Özbekistan ve bölgedeki fabrikalara odaklanmış, yerel destek ve kısıtlamaların anlaşılmasıyla",
+      "point2": "İlk günden AI merkezli — sadece panolar değil, gerçek bir AI asistanı ve CO₂ motoru",
+      "point3": "Erişilebilir — kısmi verilerle ve kademeli olarak eklenen sensörlerle bile çalışacak şekilde tasarlanmış"
+    }
+  },
+  "requestDemo": {
+    "title": "Fabrikanızı Dönüştürmeye Hazır mısınız?",
+    "subtitle": "GreenMind AI hakkında daha fazla bilgi edinmek ve demo planlamak için bizimle iletişime geçin",
+    "description": "Orta Asya'da üretim için daha sürdürülebilir bir gelecek inşa etmede bize katılın",
+    "cta": "Telegram'dan bize ulaşın",
+    "telegram": "@coder_fs"
+  },
+  "footer": {
+    "tagline": "Orta Asya'daki fabrikalar için sürdürülebilir bir gelecek inşa ediyoruz",
+    "copyright": "© 2024 GreenMind AI. Tüm hakları saklıdır.",
+    "madeIn": "Özbekistan'da 💚 ile yapıldı"
+  },
+  "demo": {
+    "hero": {
+      "badge": "Canlı Demo",
+      "title": "GreenMind AI – fabrikalar için gerçek zamanlı CO₂ ve enerji yardımcısı",
+      "subtitle": "Bu sayfada GreenMind AI'nın bir fabrikanın enerji kullanımını, CO₂ emisyonlarını ve ekipman sağlığını AI kullanarak nasıl analiz ettiğini görebilirsiniz. Demo videosunu izleyin veya AI ile gerçek zamanlı sohbet etmeyi deneyin."
+    },
+    "demoVideo": {
+      "title": "Demo videosu",
+      "intro": "Bu demo videosunda şunları göreceksiniz:",
+      "point1": "Bir tuğla fabrikasından örnek veri girme (enerji, gaz, üretim)",
+      "point2": "CO₂ hesaplamaları ve verimlilik analizi alma",
+      "point3": "Titreşim anomalilerine dayalı bakım ipuçları alma"
+    },
+    "whatThisShows": {
+      "title": "Bu demo ne gösteriyor",
+      "point1": {
+        "number": "1",
+        "title": "Veri giriyor → Analiz çıkıyor",
+        "description": "Sistem fabrika verilerini (elektrik kullanımı, gaz tüketimi, üretim hacmi, sensör okumaları) alır ve bunları uygulanabilir içgörülere dönüştürür."
+      },
+      "point2": {
+        "number": "2",
+        "title": "Gerçek problem çözücü",
+        "description": "Çoğu fabrika CO₂, enerji israfı ve makine sağlığını akıllı bir şekilde takip etmez. Manuel hesaplamalara ve reaktif bakıma güvenirler."
+      },
+      "point3": {
+        "number": "3",
+        "title": "AI yardımcı yaklaşımı",
+        "description": "GreenMind AI, fabrika verilerini pratik önerilere dönüştüren bir yardımcı olarak hareket eder: emisyonları azaltma, enerjiyi optimize etme, ekipman arızalarını tahmin etme."
+      }
+    },
+    "techStack": {
+      "title": "Teknoloji yığını ve mevcut aşama",
+      "frontend": {
+        "title": "Frontend",
+        "description": "React, TypeScript, CSS Modules, AI mesajlarını oluşturmak için React Markdown"
+      },
+      "backend": {
+        "title": "Backend ve AI",
+        "description": "Node.js, Express, Axios, Google Gemini API (Gemini 1.5 Flash), REST endpoints"
+      },
+      "demoData": {
+        "title": "Demo verileri",
+        "description": "Bir tuğla fabrikası için örnek veri setleri – günlük elektrik/gaz kullanımı, CO₂ faktörleri, üretim hacmi, hurda oranı, fırın sıcaklığı, konveyör titreşimi"
+      },
+      "roadmap": {
+        "title": "Yol haritası",
+        "description": "Aşama = MVP. Sonraki adımlar: 1–2 gerçek fabrika ile pilot, gerçek sensörleri bağlama, alarm sistemi ve CO₂ panoları"
+      }
+    },
+    "liveChat": {
+      "title": "GreenMind AI'yı deneyin (Canlı demo)",
+      "description": "CO₂ emisyonları, enerji israfı, makine sağlığı ve daha fazlası hakkında AI ile sohbet edin. AI destekler",
+      "languages": "Özbekçe, Rusça ve İngilizce",
+      "exampleLabel": "Örnek sorular:"
+    },
+    "apiAccess": {
+      "title": "API erişim örneği",
+      "description": "GreenMind AI REST API aracılığıyla da kullanılabilir:",
+      "requestLabel": "İstek:",
+      "responseLabel": "Yanıt:"
+    }
+  }
+}

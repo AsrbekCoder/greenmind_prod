@@ -7,6 +7,7 @@ const languages = [
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "uz", name: "O'zbek", flag: "🇺🇿" },
   { code: "ru", name: "Русский", flag: "🇷🇺" },
+  { code: "tr", name: "Türkçe", flag: "🇹🇷" },
 ];
 
 export const LanguageSwitcher = () => {

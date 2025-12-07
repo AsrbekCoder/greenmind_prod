@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Container } from "../../common/Container/Container";
 import { LanguageSwitcher } from "../../common/LanguageSwitcher/LanguageSwitcher";
@@ -8,6 +9,8 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -21,6 +24,34 @@ export const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    // If clicking "demo", navigate to /demo page
+    if (sectionId === "demo") {
+      navigate("/demo");
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    // If we're on the demo page, navigate to home first, then scroll
+    if (location.pathname === "/demo") {
+      navigate("/");
+      setIsMobileMenuOpen(false);
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+      return;
+    }
+
+    // Otherwise, scroll normally on the home page
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // Header height offset

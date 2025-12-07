@@ -1,0 +1,512 @@
+/* Demo Page Styles */
+.demoPage {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #0b1120 0%,
+    #020617 50%,
+    #000000 100%
+  );
+  padding-top: 80px;
+  padding-bottom: 4rem;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #10b981;
+  backdrop-filter: blur(10px);
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.mainTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  max-width: 900px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  color: #cbd5e1;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0;
+}
+
+/* Content Container */
+.contentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Columns */
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card Styles (Glassmorphism) */
+.card {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(148, 163, 184, 0.4);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 1rem 0;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+/* Video Card */
+.videoList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.videoList li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.videoList li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: 700;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.videoIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Demo Points */
+.demoPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.demoPoint {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.pointNumber {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.pointTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0 0 0.5rem 0;
+}
+
+.pointText {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Tech Stack Grid */
+.techGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.techBlock {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.techBlockTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #10b981;
+  margin: 0 0 0.5rem 0;
+}
+
+.techBlockText {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Example Questions */
+.exampleQuestions {
+  margin-bottom: 1.5rem;
+}
+
+.exampleLabel {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.75rem 0;
+}
+
+.questionChips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.questionChip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  color: #cbd5e1;
+  font-size: 0.8125rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.questionChip:hover {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: translateX(4px);
+}
+
+.chipLanguage {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+/* ChatBot Wrapper */
+.chatBotWrapper {
+  width: 100%;
+}
+
+/* Code Block */
+.codeBlock {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  background: rgba(30, 41, 59, 0.8);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.codeMethod {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  padding: 0.25rem 0.5rem;
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 4px;
+}
+
+.codeEndpoint {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.codeContent {
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.codeSection {
+  margin-bottom: 1.25rem;
+}
+
+.codeSection:last-child {
+  margin-bottom: 0;
+}
+
+.codeLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.codeText {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .demoPage {
+    padding-top: 70px;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .contentContainer {
+    padding: 0 1rem;
+  }
+
+  .contentGrid {
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .cardText {
+    font-size: 0.875rem;
+  }
+
+  .techGrid {
+    gap: 1rem;
+  }
+
+  .techBlock {
+    padding: 1rem;
+  }
+
+  .demoPoint {
+    gap: 0.75rem;
+  }
+
+  .pointNumber {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .questionChip {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  .codeContent {
+    padding: 1rem;
+  }
+
+  .codeText {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .mainTitle {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .cardTitle {
+    font-size: 1.125rem;
+  }
+
+  .videoList li {
+    font-size: 0.8125rem;
+  }
+
+  .pointTitle {
+    font-size: 0.9rem;
+  }
+
+  .pointText {
+    font-size: 0.8125rem;
+  }
+
+  .techBlockTitle {
+    font-size: 0.875rem;
+  }
+
+  .techBlockText {
+    font-size: 0.75rem;
+  }
+
+  .questionChip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .codeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

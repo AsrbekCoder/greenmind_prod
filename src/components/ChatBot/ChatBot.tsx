@@ -12,10 +12,15 @@ interface Message {
   timestamp: Date;
 }
 
-const API_URL = "https://api.greenmind.edu-zon.uz/api";
-export const ChatBot = () => {
+interface ChatBotProps {
+  inline?: boolean;
+  onSendMessage?: (message: string) => void;
+}
+
+const API_URL = "http://localhost:3002/api";
+export const ChatBot = ({ inline = false, onSendMessage }: ChatBotProps) => {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(inline ? true : false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
@@ -61,6 +66,11 @@ export const ChatBot = () => {
   const sendMessage = async (messageText?: string) => {
     const textToSend = messageText || inputMessage.trim();
     if (!textToSend) return;
+
+    // Call onSendMessage callback if provided
+    if (onSendMessage) {
+      onSendMessage(textToSend);
+    }
 
     // Add user message to UI
     const userMessage: Message = {
@@ -129,9 +139,9 @@ export const ChatBot = () => {
   };
 
   return (
-    <div className={styles.chatBot}>
+    <div className={inline ? styles.chatBotInline : styles.chatBot}>
       {/* Floating Button */}
-      {!isOpen && (
+      {!isOpen && !inline && (
         <button
           className={styles.floatingButton}
           onClick={() => setIsOpen(true)}
@@ -144,7 +154,7 @@ export const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className={styles.chatWindow}>
+        <div className={inline ? styles.chatWindowInline : styles.chatWindow}>
           {/* Header */}
           <div className={styles.header}>
             <div className={styles.headerContent}>
@@ -156,13 +166,15 @@ export const ChatBot = () => {
                 <p>Industrial Copilot</p>
               </div>
             </div>
-            <button
-              className={styles.closeButton}
-              onClick={() => setIsOpen(false)}
-              aria-label="Close chat"
-            >
-              <IoClose />
-            </button>
+            {!inline && (
+              <button
+                className={styles.closeButton}
+                onClick={() => setIsOpen(false)}
+                aria-label="Close chat"
+              >
+                <IoClose />
+              </button>
+            )}
           </div>
 
           {/* Messages */}
