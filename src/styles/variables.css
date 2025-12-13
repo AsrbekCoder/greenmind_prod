@@ -74,16 +74,109 @@
   --z-modal: 1050;
   --z-popover: 1060;
   --z-tooltip: 1070;
+
+  /* Semantic Theme Colors - Light Mode (Default) */
+  --color-background: #FFFFFF;
+  --color-background-secondary: #F9FAFB;
+  --color-background-tertiary: #F3F4F6;
+
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-overlay: rgba(255, 255, 255, 0.95);
+
+  --color-border: #E5E7EB;
+  --color-border-light: rgba(0, 0, 0, 0.08);
+  --color-border-focus: #10B981;
+
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-text-tertiary: #9CA3AF;
+  --color-text-inverse: #FFFFFF;
+
+  /* Decorative Colors */
+  --color-decorative-primary: rgba(16, 185, 129, 0.1);
+  --color-decorative-secondary: rgba(59, 130, 246, 0.08);
+
+  /* Error/Warning Colors */
+  --color-error: #EF4444;
+  --color-error-text: #DC2626;
+  --color-error-bg: #FEE2E2;
+  --color-error-border: #FECACA;
+
+  /* Special Colors */
+  --color-sparkle: #FCD34D;
+  --color-disabled: #D1D5DB;
+  --scrollbar-thumb: rgba(16, 185, 129, 0.3);
+  --scrollbar-thumb-hover: rgba(16, 185, 129, 0.5);
+
+  /* Messages Background */
+  --messages-background: linear-gradient(to bottom, #F9FAFB 0%, #F3F4F6 100%);
+
+  /* Input Colors */
+  --input-background: #F9FAFB;
+  --input-border: rgba(0, 0, 0, 0.1);
+  --input-focus-ring: rgba(16, 185, 129, 0.1);
 }
 
-/* Dark mode (optional for future) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-primary: #F9FAFB;
-    --text-secondary: #D1D5DB;
-    --text-light: #9CA3AF;
-    --bg-white: #1F2937;
-    --bg-gray-50: #111827;
-    --bg-gray-100: #1F2937;
-  }
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  /* Backgrounds */
+  --color-background: #0B1120;
+  --color-background-secondary: #020617;
+  --color-background-tertiary: #000000;
+
+  --color-surface: rgba(15, 23, 42, 0.95);
+  --color-surface-elevated: rgba(30, 41, 59, 0.6);
+  --color-surface-overlay: rgba(15, 23, 42, 0.95);
+
+  /* Borders */
+  --color-border: rgba(148, 163, 184, 0.3);
+  --color-border-light: rgba(148, 163, 184, 0.15);
+  --color-border-focus: #10B981;
+
+  /* Text Colors */
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #CBD5E1;
+  --color-text-tertiary: #94A3B8;
+  --color-text-inverse: #1F2937;
+
+  /* Decorative Colors - Darker for dark mode */
+  --color-decorative-primary: rgba(16, 185, 129, 0.15);
+  --color-decorative-secondary: rgba(59, 130, 246, 0.1);
+
+  /* Error/Warning Colors - Adjusted for dark backgrounds */
+  --color-error: #F87171;
+  --color-error-text: #FCA5A5;
+  --color-error-bg: rgba(239, 68, 68, 0.15);
+  --color-error-border: rgba(239, 68, 68, 0.3);
+
+  /* Special Colors */
+  --color-sparkle: #FBBF24;
+  --color-disabled: #4B5563;
+  --scrollbar-thumb: rgba(16, 185, 129, 0.4);
+  --scrollbar-thumb-hover: rgba(16, 185, 129, 0.6);
+
+  /* Messages Background - Dark gradient */
+  --messages-background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.3) 100%);
+
+  /* Input Colors */
+  --input-background: rgba(15, 23, 42, 0.5);
+  --input-border: rgba(148, 163, 184, 0.3);
+  --input-focus-ring: rgba(16, 185, 129, 0.2);
+
+  /* Shadows - Deeper for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  --shadow-green: 0 10px 30px -5px rgba(16, 185, 129, 0.4);
+
+  /* Legacy compatibility */
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-light: #94A3B8;
+  --bg-white: rgba(15, 23, 42, 0.95);
+  --bg-gray-50: #0B1120;
+  --bg-gray-100: rgba(30, 41, 59, 0.6);
+  --bg-gray-200: rgba(148, 163, 184, 0.3);
 }

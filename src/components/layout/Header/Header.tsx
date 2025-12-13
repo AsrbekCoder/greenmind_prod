@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Container } from "../../common/Container/Container";
 import { LanguageSwitcher } from "../../common/LanguageSwitcher/LanguageSwitcher";
+import ThemeToggle from "../../common/ThemeToggle/ThemeToggle";
 import logo from "../../../assets/images/logo.png";
 import styles from "./Header.module.css";
 
@@ -102,6 +103,7 @@ export const Header = () => {
 
           {/* Right Section */}
           <div className={styles.rightSection}>
+            <ThemeToggle />
             <LanguageSwitcher />
 
             {/* Mobile Menu Button */}
